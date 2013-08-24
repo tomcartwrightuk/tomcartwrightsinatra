@@ -1,0 +1,12 @@
+!!!
+%html
+  %head
+    %title Tomcartwright
+    %link{:href => "/images/favicon.ico", :rel => "icon", :type => "image/ico"}
+    %link{:href => "/stylesheets/application.css", :rel => "stylesheet", :medit => "all", :type => "text/css"}
+  %body
+    .content
+      = haml(:header, :layout => false)
+      = yield
+    = haml(:footer)
+    = erb(:ga)
